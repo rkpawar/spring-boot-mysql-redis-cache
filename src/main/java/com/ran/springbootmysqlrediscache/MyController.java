@@ -26,7 +26,7 @@ public class MyController {
     @GetMapping("/cities/{id}")
     public String findCity(@PathVariable Long id, Model model) {
 
-        City city = cityService.findById(id);
+        City city = cityService.findById(id, ""+id);
 
         model.addAttribute("city", city);
 

@@ -6,5 +6,5 @@ public interface ICityService {
 
     List<City> findAll();
 
-    City findById(Long id);
+    City findById(Long id, String name);
 }
