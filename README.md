@@ -27,5 +27,10 @@ ranjanpawar@Ranjans-MacBook-Pro ~ % /usr/local/Cellar/redis/6.0.10/bin/redis-cli
 
 127.0.0.1:6379> flushall
 OK
- 
 
+
+# Redis database property for cache
+spring.redis.host=localhost
+spring.redis.port=6379
+#10 MINUTES
+spring.cache.redis.time-to-live=600000
