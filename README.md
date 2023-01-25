@@ -1,4 +1,24 @@
+
+$ brew services stop mysql
+$ pkill mysqld
+$ rm -rf /usr/local/var/mysql/ # NOTE: this will delete your existing database!!!
+$ brew postinstall mysql
+$ brew services restart mysql
+$ mysql -uroot
+
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'rose';
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> exit
+Bye
+Then you are back to normal for dev.
+
+$ sudo mysql -u root -p
+Enter password:rose
+
 # spring-boot-mysql-redis-cache
+A temporary password is generated for root@localhost: eyYPbuX4pG<-
+
 1) mysql> CREATE DATABASE testdb;
    We create a new testdb database.
 2) This is SQL to create the cities table.
@@ -16,7 +36,7 @@ to stop it, just run:
 
 
 6)Open Redis-cli
-ranjanpawar@Ranjans-MacBook-Pro ~ % /usr/local/Cellar/redis/6.0.10/bin/redis-cli
+ranjanpawar@Ranjans-MacBook-Pro ~ % /usr/local/Cellar/redis/6.2.6/bin/redis-cli
 127.0.0.1:6379>
 
 127.0.0.1:6379> KEYS *

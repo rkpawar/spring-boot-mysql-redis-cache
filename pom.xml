@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.ran</groupId>
 	<artifactId>spring-boot-mysql-redis-cache</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>spring-boot-mysql-redis-cache</name>
 	<description>Demo project for Spring Boot and mysql</description>
 	<properties>
